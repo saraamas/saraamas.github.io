@@ -8,7 +8,7 @@ const LandingPage = () => {
       <div className="animation absolute w-full h-full inset-0 flex items-center justify-center">
       <div className="justify-center flex">
       <img
-          src="Me.png"
+          src="images/Me.png"
           style={{height:250,width:250}}
           alt="Sara Masmoudi"
         />

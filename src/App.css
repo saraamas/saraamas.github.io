@@ -178,3 +178,20 @@ font-size: 40%;
   -webkit-text-fill-color: #e3d000;
   font-family:monospace;
 }
+/**/
+.swiper-pagination-bullet {
+  background-color: #ffffff; /* Custom color for pagination dots */
+}
+
+/* Change the color of the navigation arrows */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #e3d000; /* Change this to your desired color */
+}
+
+/* Optional: Change the arrow size */
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 30px; /* Adjust the font size of the arrows */
+    line-height: 5;   /* Ensure proper vertical alignment */
+}

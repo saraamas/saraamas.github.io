@@ -36,23 +36,25 @@ const Contact = () => {
       </div>
       <div className="w-full max-w-4xl text-white p-8 rounded-lg shadow-lg">
         <h3 className="text-3xl font-bold mb-4 text-[#e3d000] text-center font-serif">Send a Message</h3>
+        
         <form className="flex flex-wrap font-mono" onSubmit={sendEmail}>
           <div className="w-full md:w-1/2 p-2">
             <label className="block text-sm font-semibold mb-2" htmlFor="name">Name</label>
-            <input type="text" id="name" className="w-full p-2 rounded-lg text-black border-4 border-[#e3d000]" placeholder="Your Name" />
+            <input type="text" id="name" name="name" className="w-full p-2 rounded-lg text-black border-4 border-[#e3d000]" placeholder="Your Name" />
           </div>
           <div className="w-full md:w-1/2 p-2">
             <label className="block text-sm font-semibold mb-2" htmlFor="email">Email</label>
-            <input type="email" id="email" className="w-full p-2  border-4 border-[#e3d000] rounded-lg text-black" placeholder="Your Email" />
+            <input type="email" id="email" name="email" className="w-full p-2 border-4 border-[#e3d000] rounded-lg text-black" placeholder="Your Email" />
           </div>
           <div className="w-full p-2">
             <label className="block text-sm font-semibold mb-2" htmlFor="message">Message</label>
-            <textarea id="message" className="w-full p-2 border-4 border-[#e3d000] rounded-lg text-black" placeholder="Your Message" rows="4"></textarea>
+            <textarea id="message" name="message" className="w-full p-2 border-4 border-[#e3d000] rounded-lg text-black" placeholder="Your Message" rows="4"></textarea>
           </div>
           <div className="w-full p-2 text-center">
-            <button type="submit" className=" text-white border-4 border-[#e3d000] font-bold py-2 px-4 rounded-full transition duration-300 transform hover:scale-105 hover:bg-[#e3d000]">Send</button>
+            <button type="submit" name="Send" className="text-white border-4 border-[#e3d000] font-bold py-2 px-4 rounded-full transition duration-300 transform hover:scale-105 hover:bg-[#e3d000]">Send</button>
           </div>
         </form>
+
       </div>
     </section>
   );
