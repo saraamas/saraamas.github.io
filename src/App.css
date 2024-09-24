@@ -1,3 +1,12 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +44,137 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* Header.css */
+
+.header {
+  color: #fff;
+  padding: 2%;
+  -webkit-text-fill-color: #e3d000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  font-size: 23px;
+
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*Hero.css*/
+
+.intro {
+  flex: 1;
+  margin-top: 10%;
+}
+
+.animation {
+margin-top: 7%;
+}
+/* Ajoutez les animations personnalisées ici */
+@keyframes float {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-20px);
+  }
+  100% {
+    transform: translatey(0px);
+  }
+}
+
+.floating {
+  animation: float 3s ease-in-out infinite;
+}
+/*Animation au Landing Page */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 2s ease-in;
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/*Skills*/
+.skills {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.skill-category {
+  margin-bottom: 20px;
+}
+
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+
+}
+.skills-list.h3 {
+font-size: 40%; 
+
+}
+.skills-list > * {
+  font-size: 4rem;
+  transition: transform 0.2s;
+}
+
+.skills-list > *:hover {
+  transform: scale(1.2);
+}
+
+.skill-category h3 {
+  cursor: pointer;
+}
+
+.skill-category.collapsible .skills-list {
+  display: none;
+}
+
+.skill-category.collapsible.open .skills-list {
+  display: flex;
+}
+.bg-loopgroup {
+  background-image: url("LooperGroup2.png");
+  background-size: 'cover';
+  background-repeat: 'no-repeat';
+}
+.main{
+  background-color: #000d31;
+}
+/*Projects*/
+.project-title{
+  -webkit-text-fill-color: #e3d000;
+  font-family:monospace;
 }
