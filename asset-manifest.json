@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/saraamas/saraamas.github.io.git/static/css/main.b1bc1202.css",
+    "main.js": "/saraamas/saraamas.github.io.git/static/js/main.9bba0a74.js",
+    "static/js/206.76eceb68.chunk.js": "/saraamas/saraamas.github.io.git/static/js/206.76eceb68.chunk.js",
+    "static/media/LooperGroup2.png": "/saraamas/saraamas.github.io.git/static/media/LooperGroup2.5acf68f038a2b1688cc5.png",
+    "index.html": "/saraamas/saraamas.github.io.git/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.b1bc1202.css",
+    "static/js/main.9bba0a74.js"
+  ]
+}
