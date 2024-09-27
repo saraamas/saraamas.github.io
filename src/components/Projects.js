@@ -173,44 +173,69 @@ const Projects = () => {
         </div>
         </div>
         </SwiperSlide>
-     
-        <SwiperSlide>
-        <div className="grid m-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-18 mb-10">
+        
+          <SwiperSlide>
+              <div className="grid m-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-18 mb-10">
 
-      
-          <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
-            <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Employee Manager</h3>
-            <p className="text-white mb-4">A desktop application for managing employees and departments in a company.</p>
-            
-            <div className="mb-4">
-              <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
-              <p className="text-white">Employee data management, department tracking, salary calculation, role assignments.</p>
+              {/* Project 1: Employee Manager */}
+              <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
+                <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Employee Manager</h3>
+                <p className="text-white mb-4">A desktop application for managing employees and departments in a company.</p>
+
+                <div className="mb-4">
+                  <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-white px-3 py-1 rounded-full">Employee Data Management</span>
+                    <span className="text-white px-3 py-1 rounded-full">Department Tracking</span>
+                    <span className="text-white px-3 py-1 rounded-full">Salary Calculation</span>
+                    <span className="text-white px-3 py-1 rounded-full">Role Assignments</span>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2 font-mono">
+                    <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">Angular</button>
+                    <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">.NET</button>
+                    <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">C#</button>
+                    <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">SQL Server</button>
+                  </div>
+                </div>
+              </div>
+
+              {/* Project 2: Moroccan Football Performance Prediction */}
+              <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
+                <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Moroccan Football Performance Prediction</h3>
+                <p className="text-white mb-4">A neural network model for predicting Moroccan football team performances.</p>
+
+                <div className="mb-4">
+                  <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    <span className="text-white px-3 py-1 rounded-full">Performance Prediction</span>
+                    <span className="text-white px-3 py-1 rounded-full">Data Preprocessing</span>
+                    <span className="text-white px-3 py-1 rounded-full">Model Training</span>
+                    <span className="text-white px-3 py-1 rounded-full">Model Evaluation</span>
+                  </div>
+                </div>
+
+                <div>
+                  <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2 font-mono">
+                    <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">Python</button>
+                    <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">TensorFlow</button>
+                    <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">Neural Networks</button>
+                  </div>
+                </div>
+              </div>
+
             </div>
+          </SwiperSlide>
 
-            <div>
-              <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
-              <p className="text-white">Angular, .NET, C#, SQL Server.</p>
-            </div>
-          </div>
 
-          <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
-            <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Moroccan Football Performance Prediction</h3>
-            <p className="text-white mb-4">A neural network model for predicting Moroccan football team performances.</p>
-            
-            <div className="mb-4">
-              <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
-              <p className="text-white">Performance prediction, data preprocessing, model training, and evaluation.</p>
-            </div>
 
-            <div>
-              <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
-              <p className="text-white">Python, TensorFlow, Neural Networks.</p>
-            </div>
-          </div>
 
-        </div>
 
-        </SwiperSlide>
+
       </Swiper>
     </section>
   );
