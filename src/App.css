@@ -133,6 +133,10 @@ margin-top: 7%;
 
 .skill-category {
   margin-bottom: 20px;
+  -webkit-text-fill-color: #e3d000;
+  font-family: monospace;
+  font-size: large;
+  font-weight: 400;
 }
 
 .skills-list {
@@ -180,7 +184,7 @@ font-size: 40%;
 }
 /**/
 .swiper-pagination-bullet {
-  background-color: #ffffff; /* Custom color for pagination dots */
+  background-color: #e3d000; /* Custom color for pagination dots */
 }
 
 /* Change the color of the navigation arrows */
@@ -189,9 +193,3 @@ font-size: 40%;
     color: #e3d000; /* Change this to your desired color */
 }
 
-/* Optional: Change the arrow size */
-.swiper-button-next:after,
-.swiper-button-prev:after {
-    font-size: 30px; /* Adjust the font size of the arrows */
-    line-height: 5;   /* Ensure proper vertical alignment */
-}

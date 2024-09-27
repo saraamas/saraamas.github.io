@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
-import { FaPython, FaJava, FaPhp, FaReact, FaLaravel, FaGitAlt,FaAndroid, FaGithub, FaNodeJs, FaDocker, FaAws } from 'react-icons/fa';
-import { SiSpring, SiMysql, SiMongodb, SiFirebase, SiKubernetes,  SiJenkins } from 'react-icons/si';
+import { FaPython, FaJava, FaPhp, FaReact, FaLaravel, FaGitAlt,FaAndroid, FaGithub, FaDocker, FaAws } from 'react-icons/fa';
+import { SiSpring, SiMysql, SiMongodb, SiFirebase, SiKubernetes,  SiJenkins, SiFlutter } from 'react-icons/si';
 import '../App.css';
 import { DiAngularSimple, DiJavascript } from 'react-icons/di';
 import { SiCplusplus } from "react-icons/si";
@@ -41,12 +41,9 @@ const Skills = () => {
           <SiSpring title="Spring Boot" />
           {/* Add other relevant icons */}
         </SkillCategory>
-        <SkillCategory title="Development Tools and Technologies">
-          <FaNodeJs title="Node.js" />
+        <SkillCategory title="Mobile">
           <FaAndroid title="Android Studio" />
-          <i className="devicon-uml-plain" title="UML"></i>
-          <i className="devicon-merise-plain" title="MERISE Method"></i>
-          <i className="devicon-j2ee-plain" title="J2EE"></i>
+          <SiFlutter title="Flutter"/>
           {/* Add other relevant icons */}
         </SkillCategory>
         <SkillCategory title="Version Control">
@@ -60,7 +57,7 @@ const Skills = () => {
         </SkillCategory>
         <SkillCategory title="DevOps Tools">
           <FaDocker title="Docker" />
-          <FaAws title='aws'/>
+          <FaAws title='Aws'/>
           <SiKubernetes title="Kubernetes" />
           <SiJenkins title="Jenkins" />
         </SkillCategory>

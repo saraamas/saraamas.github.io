@@ -4,7 +4,7 @@ import 'swiper/css'; // Import core Swiper styles
 import 'swiper/css/navigation'; // Import Navigation module styles
 import 'swiper/css/pagination'; // Import Pagination module styles
 import { Navigation, Pagination } from 'swiper/modules'; // Optional for navigation and pagination
-import "../App.css";
+import '../App.css';
 
 const Projects = () => {
   return (
@@ -12,76 +12,204 @@ const Projects = () => {
       <Swiper
         modules={[Navigation, Pagination]}  // Add optional modules
         spaceBetween={30}  // Space between slides
-        slidesPerView={1}  // Number of visible slides
-        navigation  // Enable navigation arrows
+        slidesPerView={1}  // Number of visible slides   
+        navigation={true} // Enables Navigation
         pagination={{ clickable: true }}  // Enable pagination dots
-        style={{
-          color: '#f2a65a',  // Text color inside the swiper
-        }}
-        className="w-full col-6 max-w-5xl"
+        className="w-full col-12 max-w-6xl"
       >
-        <SwiperSlide>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
-        <div className="shadow-lg rounded-lg p-6 border-4 border-[#e3d000]">
-            <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">SMARTfridge</h3>
-            <p className="text-white mb-4">Manage your refrigerator smartly with real-time monitoring and ML integration.</p>
-            <p className="text-white">Features: Stock consultation, shopping list generation, recipe suggestions.</p>
-            <p className="text-white mt-2">Technologies: Arduino, Raspberry Pi, Scikit-Learn.</p>
-          </div>
-          <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
-            <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Paincare</h3>
-            <p className="text-white mb-4">Empowering women with endometriosis through a dedicated platform.</p>
-            <p className="text-white">Features: Symptom tracking, personalized diagnostics, and more.</p>
-            <p className="text-white mt-2">Technologies: J2EE, Bootstrap.</p>
-          </div>
-          <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
-            <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">BigBand</h3>
-            <p className="text-white mb-4">Microservices mobile cross-platform connecting music bands with event hosts,featuring real-time availability tracking for bands
-            and event management for hosts.The application was fully containerized using Docker and deployed locally with
-            plans for cloud deployment.</p>
-            <p className="text-white mt-2">Technologies: SpringBoot,MongoDB, ReactNative.</p>
-          </div>
-          <div className="shadow-lg rounded-lg p-6 border-4 border-[#e3d000]">
-            <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Volunteer</h3>
-            <p className="text-white mb-4">A platform connecting volunteers with associations.</p>
-            <p className="text-white">Features: Event posting, volunteer applications, and interaction management.</p>
-            <p className="text-white mt-2">Technologies: UML, JEE.</p>
-          </div>
 
-          </div>
-        </SwiperSlide>
         <SwiperSlide>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+        <div className="grid m-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-18 mb-10">
+              {/* Project 1: SMARTfridge */}
+              <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
+                  <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">SMARTfridge</h3>
+                  <p className="text-white mb-4">Manage your refrigerator smartly with real-time monitoring and ML integration.</p>
+                  
+                  <div className="mb-4">
+                      <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
+                      <div className="flex flex-wrap gap-2 font-semibold">
+                          <span className="text-white px-3 py-1 rounded-full">Stock Consultation</span>
+                          <span className="text-white px-3 py-1 rounded-full">Shopping List Generation</span>
+                          <span className="text-white px-3 py-1 rounded-full">Recipe Suggestions</span>
+                      </div>
+                  </div>
+
+                  <div>
+                      <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
+                      <div className="flex flex-wrap gap-2 font-mono">
+                          <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">Arduino</button>
+                          <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">Raspberry Pi</button>
+                          <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">Scikit-Learn</button>
+                      </div>
+                  </div>
+              </div>
+
+              {/* Project 2: Paincare */}
+              <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
+                  <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Paincare</h3>
+                  <p className="text-white mb-4">Empowering women with endometriosis through a dedicated platform.</p>
+                  
+                  <div className="mb-4">
+                      <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
+                      <div className="flex flex-wrap gap-2 font-semibold">
+                          <span className="text-white px-3 py-1 rounded-full">Symptom Tracking</span>
+                          <span className="text-white px-3 py-1 rounded-full">Personalized Diagnostics</span>
+                          <span className="text-white px-3 py-1 rounded-full">Community Support</span>
+                      </div>
+                  </div>
+
+                  <div>
+                      <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
+                      <div className="flex flex-wrap gap-2 font-mono">
+                          <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">J2EE</button>
+                          <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">Bootstrap</button>
+                      </div>
+                  </div>
+              </div>
+
+              {/* Project 3: BigBand */}
+              <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000] ">
+                  <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">BigBand</h3>
+                  <p className="text-white mb-4">Microservices mobile cross-platform connecting music bands with event hosts, featuring real-time availability tracking.</p>
+                  
+                  <div className="mb-4">
+                      <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
+                      <div className="flex flex-wrap gap-2 font-semibold">
+                          <span className="text-white px-3 py-1 rounded-full">Real-Time Availability Tracking</span>
+                          <span className="text-white px-3 py-1 rounded-full">Event Management</span>
+                          <span className="text-white px-3 py-1 rounded-full">User Notifications</span>
+                      </div>
+                  </div>
+
+                  <div>
+                      <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
+                      <div className="flex flex-wrap gap-2 font-mono">
+                          <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">SpringBoot</button>
+                          <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">MongoDB</button>
+                          <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">ReactNative</button>
+                      </div>
+                  </div>
+              </div>
+
+        </div>
+        </SwiperSlide>
+
+        <SwiperSlide>
+        <div className="grid m-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-18 mb-10">
+
+          {/* Project 4: Volunteer */}
+          <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000] ">
+                  <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Volunteer</h3>
+                  <p className="text-white mb-4">A platform connecting volunteers with associations.</p>
+                  
+                  <div className="mb-4">
+                      <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
+                      <div className="flex flex-wrap gap-2 font-semibold">
+                          <span className="text-white px-3 py-1 rounded-full">Event Posting</span>
+                          <span className="text-white px-3 py-1 rounded-full">Volunteer Applications</span>
+                          <span className="text-white px-3 py-1 rounded-full">Interaction Management</span>
+                      </div>
+                  </div>
+
+                  <div>
+                      <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
+                      <div className="flex flex-wrap gap-2 font-mono">
+                          <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">UML</button>
+                          <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">JEE</button>
+                      </div>
+                  </div>
+              </div>
+
           
-        <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
+          {/* Project 5: One Smile */}
+
+          <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
             <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">OneSmile</h3>
             <p className="text-white mb-4">A web application for dental clinic management.</p>
-            <p className="text-white">Key Features: Patient management, medical data collection, appointment scheduling.</p>
-            <p className="text-white mt-2">Technologies: Laravel (PHP), MySQL, HTML/CSS.</p>
-        </div>
-                  <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
-            <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Task Manager Android App</h3>
-            <p className="text-white mb-4">An Android app for task management and organization.</p>
-            <p className="text-white">Key Features: Task creation, categorization, due date reminders, notifications.</p>
-            <p className="text-white mt-2">Technologies: Java, Android SDK, SQLite.</p>
+
+            <div className="mb-4">
+              <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
+              <div className="flex flex-wrap gap-2">
+                <span className="text-white px-3 py-1 rounded-full">Patient Management</span>
+                <span className="text-white px-3 py-1 rounded-full">Medical Data Collection</span>
+                <span className="text-white px-3 py-1 rounded-full">Appointment Scheduling</span>
+              </div>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
+              <div className="flex flex-wrap gap-2 font-mono">
+                <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">Laravel</button>
+                <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">MySQL</button>
+                <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">HTML</button>
+                <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">CSS</button>
+                <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">JS</button>
+              </div>
+            </div>
           </div>
 
+          {/* Project 6: TaskManager */}
+        <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
+          <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Task Manager Android App</h3>
+          <p className="text-white mb-4">An Android app for task management and organization.</p>
+
+          <div className="mb-4">
+            <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
+            <div className="flex flex-wrap gap-2">
+              <span className="text-white px-3 py-1 rounded-full">Task Creation</span>
+              <span className="text-white px-3 py-1 rounded-full">Due Date Reminders</span>
+              <span className="text-white px-3 py-1 rounded-full">Calendar Tracker</span>
+            </div>
+          </div>
+
+            <>
+              <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
+              <div className="flex flex-wrap gap-2 font-mono">
+                <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">Java</button>
+                <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">AndroidSDK</button>
+                <button className="bg-[#e3d000] text-white px-4 py-1 rounded-lg shadow hover:bg-yellow-500 transition duration-300">Firebase</button>
+              </div>
+            </>
+        </div>
+        </div>
+        </SwiperSlide>
+     
+        <SwiperSlide>
+        <div className="grid m-20 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-18 mb-10">
+
+      
           <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
             <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Employee Manager</h3>
             <p className="text-white mb-4">A desktop application for managing employees and departments in a company.</p>
-            <p className="text-white">Key Features: Employee data management, department tracking, salary calculation, role assignments.</p>
-            <p className="text-white mt-2">Technologies: .NET, C#, SQL Server.</p>
+            
+            <div className="mb-4">
+              <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
+              <p className="text-white">Employee data management, department tracking, salary calculation, role assignments.</p>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
+              <p className="text-white">Angular, .NET, C#, SQL Server.</p>
+            </div>
           </div>
 
           <div className="shadow-lg rounded-lg p-4 border-4 border-[#e3d000]">
             <h3 className="project-title text-3xl font-semibold mb-4 text-[#e3d000]">Moroccan Football Performance Prediction</h3>
             <p className="text-white mb-4">A neural network model for predicting Moroccan football team performances.</p>
-            <p className="text-white">Key Features: Performance prediction, data preprocessing, model training, and evaluation.</p>
-            <p className="text-white mt-2">Technologies: Python, TensorFlow, Neural Networks.</p>
+            
+            <div className="mb-4">
+              <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Key Features:</h4>
+              <p className="text-white">Performance prediction, data preprocessing, model training, and evaluation.</p>
+            </div>
+
+            <div>
+              <h4 className="text-xl font-semibold text-[#e3d000] mb-2">Technologies:</h4>
+              <p className="text-white">Python, TensorFlow, Neural Networks.</p>
+            </div>
           </div>
 
-
         </div>
+
         </SwiperSlide>
       </Swiper>
     </section>
