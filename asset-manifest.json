@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.32c69c28.css",
-    "main.js": "/static/js/main.ab7dc5c0.js",
+    "main.css": "/static/css/main.51510f09.css",
+    "main.js": "/static/js/main.6d3aef4c.js",
     "static/js/206.76eceb68.chunk.js": "/static/js/206.76eceb68.chunk.js",
     "static/media/LooperGroup2.png": "/static/media/LooperGroup2.5acf68f038a2b1688cc5.png",
     "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.32c69c28.css",
-    "static/js/main.ab7dc5c0.js"
+    "static/css/main.51510f09.css",
+    "static/js/main.6d3aef4c.js"
   ]
 }
